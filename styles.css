@@ -42,20 +42,29 @@ body {
 
 main {
   max-width: 100%;
-  margin: 0.5em 1.5em;
   border-radius: 1em;
-  background-image: url("images/dog-teddy.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  width: auto;
 }
 
-.description {
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-img {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cat-description {
+  margin-top: -80px;
+  padding: 0 7em;
   color: #fff;
-  padding: 1em;
-  position: relative;
-  bottom: -80%;
+  font-weight: 400;
+  height: 60px;
 }
 
 /* Buttons */
@@ -68,10 +77,18 @@ main {
 }
 
 #like,
-#reject {
+#swipe {
   border: none;
   border-radius: 50%;
   padding: 1em;
   width: 60px;
   height: 60px;
+  cursor: pointer;
+}
+
+.end {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
